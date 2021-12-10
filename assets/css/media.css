@@ -1,0 +1,241 @@
+@media only screen and (max-width: 992px) and (orientation: landscape) {
+  .timer,
+  .score {
+    width: 117px;
+    height: 99px;
+    top: -0.6rem;
+    font-size: 18px;
+  }
+  .timer {
+    right: 21%;
+  }
+
+  .score {
+    right: 6%;
+  }
+
+  .game_bg .container-fluid {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .game_bg img.player {
+    display: none;
+  }
+
+  .crossword {
+    width: 90%;
+  }
+
+  .crossword-puzzle {
+    width: 60%;
+  }
+
+  .crossword-clues {
+    width: 40%;
+    padding: 0;
+  }
+
+  .crossword-clues p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .crossword-clues li {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .grid-square .word-label {
+    top: -50%;
+    left: -50%;
+  }
+
+  .crossword-clues .row {
+    height: 80vh;
+    margin-top: 11vh;
+  }
+
+  .game_bg {
+    /* background: url(../images/bg-2.jpg) rgb(0 0 0 / 25%); */
+    background-position: 100% 50%;
+    background-size: 137% 140%;
+    background-blend-mode: multiply;
+  }
+
+  #submit-btn {
+    left: 1rem;
+
+    bottom: 1rem;
+
+    transform: unset;
+
+    width: calc(82px + 9vw);
+  }
+}
+
+@media only screen and (width: 812px) and (height: 375px) {
+  .crossword-puzzle table.crossword-grid {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  ol {
+    padding: 0;
+  }
+
+  .crossword-clues {
+    font-size: 7px;
+  }
+
+  .grid-square .word-label {
+    font-size: calc(7px + 0.25vw);
+    top: -50%;
+    left: -50%;
+  }
+
+  .name {
+    font-size: 0.95em;
+  }
+
+  .timer,
+  .score {
+    width: 100px;
+    height: 99px;
+    top: -1.3rem;
+    font-size: 14px;
+  }
+  .timer {
+    right: 25%;
+  }
+
+  .score {
+    right: 5%;
+  }
+
+  .crossword-clues p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .crossword-clues li {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 850px) and (orientation: landscape) {
+  ol {
+    padding: 0;
+  }
+
+  .crossword-clues .row {
+    margin-left: 0 !important;
+  }
+
+  .name {
+    font-size: 0.95em;
+  }
+}
+
+@media (min-width: 851px) and (max-width: 1200px) {
+  .crossword-clues {
+    font-size: 11px;
+  }
+}
+
+@media (width: 653px) {
+  .timer {
+    width: 10%;
+  }
+}
+
+/*** Fix ISO input zoom ***/
+body {
+  font-size: 16px;
+}
+
+input,
+select {
+  font-size: 100%;
+}
+
+/*** iPhone and iOS Form Input Zoom Fixes ***/
+/* Fix Input Zoom on devices older than iPhone 5: */
+@media screen and (device-aspect-ratio: 2/3) {
+  select,
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="date"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  input[type="number"],
+  input[type="email"],
+  input[type="url"] {
+    font-size: 16px;
+  }
+}
+
+/* Fix Input Zoom on iPhone 5, 5C, 5S, iPod Touch 5g */
+@media screen and (device-aspect-ratio: 40/71) {
+  select,
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="date"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  input[type="number"],
+  input[type="email"],
+  input[type="url"] {
+    font-size: 16px;
+  }
+}
+
+/* Fix Input Zoom on iPhone 6, iPhone 6s, iPhone 7  */
+@media screen and (device-aspect-ratio: 375/667) {
+  select,
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="date"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  input[type="number"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="url"] {
+    font-size: 16px;
+  }
+}
+
+/* Fix Input Zoom on iPhone 6 Plus, iPhone 6s Plus, iPhone 7 Plus, iPhone 8, iPhone X, XS, XS Max  */
+@media screen and (device-aspect-ratio: 9/16) {
+  select,
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="date"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  input[type="number"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="url"] {
+    font-size: 16px;
+  }
+}

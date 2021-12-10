@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Animals crosswords</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--Styles-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
+</head>
+
+<body>
+    <!-- Start section Start -->
+    <section class="start-bg">
+        <div class="container">
+            <div class="game_name text-center">
+                <a class="startBtn" id="quiz-start-btn">
+                    <img class="img-fluid mt-3 hover-animation" src="assets/images/start-btn.svg" alt="btn">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- End section Start -->
+
+    <!--Game section -->
+    <section class="game_bg">
+        <div class="timer">
+            <span id="s_timer" class="">00:00</span>
+        </div>
+        <div class="score">
+            <span>0</span>
+        </div>
+
+        <div class="container-fluid">
+
+            <img src="assets/images/player.png" alt="" class="player">
+
+            <!--// Game will be injected here //-->
+            <div class="crossword row"></div>
+
+        </div>
+
+        <img class="hover-animation" id="submit-btn" src="assets/images/submit.svg" alt="">
+
+
+    </section>
+    <!-- End game section -->
+
+    <!-- Start you win section -->
+    <section class="win_bg">
+        <div class="final_score">
+            <p>Score</p>
+            <span>0</span>
+        </div>
+    </section>
+    <!-- End you win section -->
+
+    <!-- Start you lose section -->
+    <section class="lose_bg">
+        <div class="final_score">
+            <p>Score</p>
+            <span>0</span>
+        </div>
+    </section>
+    <!-- End you lose section -->
+
+    <!-- Start the Rotate msg if Portrait -->
+    <div class="rotateMessage">
+        <div class="rotateMessage-container">
+            <div class="rotateMessage-content">
+                <div class="rotateMessage-text">
+                    Please use landscape mode
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End the Rotate msg if Portrait -->
+
+
+    <!-- Start game loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- End game loader -->
+
+    <!-- End game confirm popup -->
+    <div id="confirm">
+        <div class="inner">
+            <h4>Are you sure for submitting game ?</h4>
+            <p>You are going to end game with score: <span class="score">0</span> <span class="bouns"></span></p>
+            <div class="btns">
+                <img class="hover-animation" id="end-game-button" src="assets/images/yes-btn.svg" alt="">
+                <img class="hover-animation" id="continue-game-button" src="assets/images/no-btn.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- End game confirm popup -->
+
+    <script type="text/javascript" src="assets/js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
+    <script type="text/javascript" src="assets/js/game.js"></script>
+</body>
+
+</html>
